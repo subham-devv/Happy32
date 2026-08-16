@@ -1463,11 +1463,12 @@ export const Home: React.FC = () => {
             {/* Left Column: Doctor Portrait Stage & Glowing Halo */}
             <div className="lg:col-span-5 relative">
               <div className="relative w-full h-[480px] sm:h-[560px] lg:h-[620px] rounded-3xl overflow-hidden shadow-2xl border border-[#EDE8DF] group">
-                <RevealImage
+               <RevealImage
                   src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=1000&q=90"
                   alt="Dr. Himanshi Sawlani - Dental & Cosmetic Surgeon"
                   shape="crescent"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full"
+                  imageClassName="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
 
                 {/* Gold Framing Accent */}
