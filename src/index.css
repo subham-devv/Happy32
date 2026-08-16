@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0E0C0A;
+  --color-ivory: #F8F4EE;
+  --color-porcelain: #EDE8DF;
+  --color-gold: #A8854A;
+  --color-terracotta: #B85C3A;
+  --color-body: #3D362F;
+  --color-muted: #7A6E64;
+  --color-sage: #4E6B58;
+
+  --font-cormorant: 'Cormorant', serif;
+  --font-dmSans: 'DM Sans', sans-serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Cormorant', serif;
+}
+
+:root {
+  --ink: #0E0C0A;
+  --ivory: #F8F4EE;
+  --porcelain: #EDE8DF;
+  --gold: #A8854A;
+  --terracotta: #B85C3A;
+  --body: #3D362F;
+  --muted: #7A6E64;
+  --white: #FFFFFF;
+  --sage: #4E6B58;
+}
+
+/* Base resets & utilities */
+body {
+  font-family: var(--font-dmSans);
+  background-color: var(--ivory);
+  color: var(--body);
+  overflow-x: hidden;
+}
+
+/* Hide right side scrollbar globally across all browsers */
+::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html, body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+h1, h2, h3, .font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 3px;
+}
+

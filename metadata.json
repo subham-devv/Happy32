@@ -1,0 +1,8 @@
+{
+  "name": "2C Remix Happy 32 Dentofacial Clinic",
+  "description": "Completed first time for demo.this time really completed.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
